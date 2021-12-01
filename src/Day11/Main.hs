@@ -1,9 +1,7 @@
 module Day11.Main where
 
-import Solution
+solution1 :: IO ()
+solution1 = pure ()
 
-solution1 :: Solution
-solution1 = undefined
-
-solution2 :: Solution
-solution2 = undefined
+solution2 :: IO ()
+solution2 = pure ()

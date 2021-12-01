@@ -28,45 +28,35 @@ import qualified Day25.Main as D25
 
 import System.Environment ( getArgs )
 
-import Solution
-
 main :: IO ()
 main = do
   [arg] <- getArgs
   case arg of 
-    "1" -> printSolution "1" D1.solution1 D1.solution2
-    "2" -> printSolution "2" D2.solution1 D2.solution2
-    "3" -> printSolution "3" D3.solution1 D3.solution2
-    "4" -> printSolution "4" D4.solution1 D4.solution2
-    "5" -> printSolution "5" D5.solution1 D5.solution2
-    "6" -> printSolution "6" D6.solution1 D6.solution2
-    "7" -> printSolution "7" D7.solution1 D7.solution2
-    "8" -> printSolution "8" D8.solution1 D8.solution2
-    "9" -> printSolution "9" D9.solution1 D9.solution2
-    "10" -> printSolution "10" D10.solution1 D10.solution2
-    "11" -> printSolution "11" D11.solution1 D11.solution2
-    "12" -> printSolution "12" D12.solution1 D12.solution2
-    "13" -> printSolution "13" D13.solution1 D13.solution2
-    "14" -> printSolution "14" D14.solution1 D14.solution2
-    "15" -> printSolution "15" D15.solution1 D15.solution2
-    "16" -> printSolution "16" D16.solution1 D16.solution2
-    "17" -> printSolution "17" D17.solution1 D17.solution2
-    "18" -> printSolution "18" D18.solution1 D18.solution2
-    "19" -> printSolution "19" D19.solution1 D19.solution2
-    "20" -> printSolution "20" D20.solution1 D20.solution2
-    "21" -> printSolution "21" D21.solution1 D21.solution2
-    "22" -> printSolution "22" D22.solution1 D22.solution2
-    "23" -> printSolution "23" D23.solution1 D23.solution2
-    "24" -> printSolution "24" D24.solution1 D24.solution2
-    "25" -> printSolution "25" D25.solution1 D25.solution2
+    "1" -> D1.solution1 >> D1.solution2
+    "2" -> D2.solution1 >> D2.solution2
+    "3" -> D3.solution1 >> D3.solution2
+    "4" -> D4.solution1 >> D4.solution2
+    "5" -> D5.solution1 >> D5.solution2
+    "6" -> D6.solution1 >> D6.solution2
+    "7" -> D7.solution1 >> D7.solution2
+    "8" -> D8.solution1 >> D8.solution2
+    "9" -> D9.solution1 >> D9.solution2
+    "10" -> D10.solution1 >> D10.solution2
+    "11" -> D11.solution1 >> D11.solution2
+    "12" -> D12.solution1 >> D12.solution2
+    "13" -> D13.solution1 >> D13.solution2
+    "14" -> D14.solution1 >> D14.solution2
+    "15" -> D15.solution1 >> D15.solution2
+    "16" -> D16.solution1 >> D16.solution2
+    "17" -> D17.solution1 >> D17.solution2
+    "18" -> D18.solution1 >> D18.solution2
+    "19" -> D19.solution1 >> D19.solution2
+    "20" -> D20.solution1 >> D20.solution2
+    "21" -> D21.solution1 >> D21.solution2
+    "22" -> D22.solution1 >> D22.solution2
+    "23" -> D23.solution1 >> D23.solution2
+    "24" -> D24.solution1 >> D24.solution2
+    "25" -> D25.solution1 >> D25.solution2
     _ -> print "No puzzle matched"
 
-printSolution :: String -> Solution -> Solution -> IO ()
-printSolution name s1 s2 = do
-  let filepath = "inputs/day" ++ name ++ "/"
-  putStrLn "Solution 1:"
-  runSolution (filepath ++ "1") s1 >>= putStrLn
-  
-  putStrLn "\nSolution 2:"
-  runSolution (filepath ++ "2") s2 >>= putStrLn
 
