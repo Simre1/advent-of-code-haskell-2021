@@ -41,6 +41,7 @@ library
     TypeApplications
     BangPatterns
     ViewPatterns
+    DataKinds
   ghc-options: -O2 -threaded
 
 executable runner
