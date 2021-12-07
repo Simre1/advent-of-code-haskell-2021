@@ -29,3 +29,4 @@ solution2 :: IO ()
 solution2 = do
   initialPopulation <- parseInitialPopulation <$> readFile "inputs/day6/input1"
   print $ V.sum $ (!! 256) $ iterate simulatePopulation initialPopulation
+
