@@ -24,7 +24,7 @@ library
                    Day25.Main
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.14 && <4.15, containers, unordered-containers, text, bytestring, split, criterion, attoparsec, vector, deepseq, hashtables, array, primitive, massiv, megaparsec, transformers, regex, random, linear
+  build-depends:       base >=4.14 && <4.15, containers, unordered-containers, text, bytestring, split, criterion, attoparsec, vector, deepseq, hashtables, array, primitive, massiv, megaparsec, transformers, regex, random, linear, minisat-solver
   -- hs-source-dirs:
   default-language:    Haskell2010
   default-extensions:
