@@ -1,7 +1,5 @@
 module Day8.Main where
 
---
-
 import Data.Functor ((<&>))
 import Data.List.Split (splitOn)
 import qualified Data.Map as M
@@ -18,7 +16,6 @@ solution1 :: IO ()
 solution1 = do
   input <- parseInput <$> readFile "inputs/day8/test"
   print $ length $ mconcat $ filter (\s -> length s `elem` [2, 3, 4, 7]) . snd <$> input
-  pure ()
 
 solution2 :: IO ()
 solution2 = do
