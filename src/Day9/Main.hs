@@ -4,7 +4,6 @@ module Day9.Main where
 
 import qualified Data.Massiv.Array as M
 import qualified Data.Set as S
-import Debug.Trace
 import Data.List (sortBy)
 
 parseInput :: String -> M.Array M.U M.Ix2 Int
