@@ -1,15 +1,13 @@
 module Day12.Main where
 
-import Algorithm.Search
-import Control.Monad.Trans.Class
-import Control.Monad.Trans.State
-import Data.Char
-import Data.List
-import Data.List.Split
+import Algorithm.Search (dfsM)
+import Control.Monad.Trans.State (State, execState, modify)
+import Data.Char (isLower)
+import Data.List (foldl')
+import Data.List.Split (splitOn)
 import qualified Data.Map as M
-import Data.Maybe
+import Data.Maybe (fromMaybe)
 import qualified Data.Set as S
-import Debug.Trace
 
 type CaveSystem = M.Map String [String]
 
