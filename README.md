@@ -15,7 +15,7 @@ My solutions to the coding problems in Advent of Code 2021.
 - [x] Day 11
 - [x] Day 12
 - [x] Day 13
-- [ ] Day 14
+- [x] Day 14
 - [ ] Day 15
 - [ ] Day 16
 - [ ] Day 17
