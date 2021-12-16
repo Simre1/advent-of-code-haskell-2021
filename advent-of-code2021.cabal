@@ -43,6 +43,8 @@ library
     ViewPatterns
     DataKinds
     TupleSections
+    PolyKinds
+    StandaloneDeriving
   ghc-options: -O2 -threaded
 
 executable runner
