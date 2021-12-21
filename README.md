@@ -21,8 +21,8 @@ My solutions to the coding problems in Advent of Code 2021.
 - [x] Day 17
 - [x] Day 18
 - [x] Day 19
-- [ ] Day 20
-- [ ] Day 21
+- [x] Day 20
+- [x] Day 21
 - [ ] Day 22
 - [ ] Day 23
 - [ ] Day 24
