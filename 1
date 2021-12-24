@@ -1,0 +1,27 @@
+module Day24.Main where
+
+data Register = X | Y | Z | W
+
+data Value = Literal Int | Register Register
+
+data Instruction = Input Register | Add Register Value | Multiply Register Value | Divide Register Value | Modulo Register Value | Equal Register Value
+
+readInput :: String -> [Instruction]
+readInput = fmap parseInstruction . lines
+  where 
+    parseInstruction = \case
+      ('i':'n':'p':' ':r) -> Input (parseRegister r)
+      ('a':'d':'d':' ':r:' ':v) -> Add (parseRegister r) (parseValue v)
+
+    parseRegister = \case
+      'x' -> X
+      'y' -> Y
+      'z' -> Z
+      'w' -> W
+      r -> error $ "unknown register: " ++ r
+
+solution1 :: IO ()
+solution1 = pure ()
+
+solution2 :: IO ()
+solution2 = pure ()
